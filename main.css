@@ -1,0 +1,66 @@
+.cl { clear: both; font-size: 0px; }
+.medium-w2222 { color: green; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; line-height: 15px; }
+#basketTop { background: rgb(228, 36, 107); border-radius: 5px 0px 0px 5px; padding: 40px 7px 30px; position: fixed; right: 0px; top: 50%; transition-duration: 0.3s; width: 35px; height: 38px; z-index: 4; }
+#basketTop:hover { right: 180px; }
+#basketTop:hover #basketTop-content { right: 0px; }
+#basketTop #basketTop-content { background: white; border: 1px solid rgb(224, 224, 224); color: rgb(102, 102, 102); font-family: verdana; font-size: 14px; height: 80px; padding: 14px 5px; position: fixed; right: -180px; text-align: left; top: 50%; transition-duration: 0.3s; width: 168px; }
+#basketTop #basketTop-content .title { color: rgb(102, 102, 102); display: block; font-size: 14px; font-weight: bold; line-height: 20px; }
+#basketTop #basketTop-content.count { font-size: 14px; line-height: 20px; }
+#basketTop #basketTop-content .count2 { font-size: 14px; line-height: 20px; }
+#basketTop #basketTop-content .price { font-size: 14px; line-height: 20px; }
+#cityPopup { display: none; width: 600px; position: absolute; background: white; padding: 20px; border-radius: 5px; top: 100px; left: 300px; z-index: 99999999; }
+#cityPopup h2 { color: rgb(237, 16, 102); text-align: center; text-transform: uppercase; }
+#cityPopup .cityList { column-count: 6; }
+#cityPopup .cityList span.letter { max-width: 150px; }
+#cityPopup .cityList span.l { font-size: 24px; color: rgb(102, 102, 102); }
+#cityPopup .cityList span.city { font-size: 12px; font-weight: 300; padding: 2px 0px; }
+#cityPopup .cityList span { display: block; }
+#cityPopup .cityList span a { color: rgb(102, 102, 102); text-decoration: none; }
+#cityPopup .cityList span a:hover { border-bottom: 0px; }
+#search { margin-top: 30px; color: rgb(102, 102, 102); }
+#search .supplier-desc { border: 1px solid rgb(224, 224, 224); border-radius: 5px; margin: 10px 0px; padding: 10px; text-align: center; }
+#filtersForm { margin: 0px; color: rgb(102, 102, 102); }
+#search .filters { padding: 10px 0px; }
+#search .filters .onpages select { margin-left: 10px; width: 70px; }
+#search .searchInput .left { width: 400px; float: left; }
+#search .searchInput .left input { border: 1px solid rgb(206, 206, 206); border-radius: 5px; color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; padding: 6px 0px 10px 10px; width: 390px; }
+#search .searchInput .right { width: 100px; float: left; padding-top: 2px; }
+#search .searchInput .right input { width: 28px; height: 28px; border: 0px; cursor: pointer; background: url("") no-repeat; }
+#search .searchList .item .image { text-align: center; }
+#search .navigate { margin-bottom: 10px; text-align: center; }
+#search .navigate a { color: rgb(102, 102, 102); font-size: 14px; padding: 2px 4px; text-decoration: none; }
+#search .navigate a.active { background: none 0px 0px repeat scroll silver; border-radius: 25px; color: white; display: inline-block; height: 1.3em; padding: 5px; width: 1.3em; }
+#search .navigate span { font-size: 16px; padding: 2px 4px; font-weight: bold; }
+#search .searchList .count { padding: 5px 0px; }
+#search .brand-page-txt { color: rgb(102, 102, 102); margin-top: 10px; }
+#search .brand-page-txt .brand-tm-page-description { margin: 15px 0px; }
+#search .brand-page-txt .brand-tm-page-description .brand-tm-page-logo { display: block; float: left; }
+#search .brand-page-txt .brand-tm-page-description .brand-tm-page-description-text { background: rgb(231, 231, 231); margin-left: 130px; padding: 15px; }
+#search .searchList .warning-price-message { border: 1px solid rgb(237, 16, 102); border-radius: 4px; color: rgb(237, 16, 102); font-size: 14px; margin-bottom: 10px; padding: 10px; text-align: center; }
+.tov-block { border: 1px solid rgb(224, 224, 224); border-radius: 5px; color: rgb(102, 102, 102); margin: 0px 0px 10px; padding: 10px; }
+.tov-block table tr td { color: rgb(102, 102, 102); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; }
+.tov-block table tr td a { color: rgb(102, 102, 102); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; }
+.tov-block table tr td .goods-name-table-tov-block { color: rgb(102, 102, 102); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; overflow: hidden; text-overflow: ellipsis; width: 280px; }
+#leftMenu { background: white; margin-bottom: 8px; position: relative; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px; }
+#leftMenu ul { padding: 0px; margin: 10px 0px 0px; }
+#leftMenu li { list-style: none; padding: 0px; position: relative; color: rgb(102, 102, 102); }
+#leftMenu ul.mainMenu > li { height: 22px; line-height: 23px; padding: 5px; border-top: 1px solid rgb(227, 227, 227); }
+#leftMenu ul.mainMenu > li:hover { background: rgb(237, 16, 102); }
+#leftMenu ul.mainMenu > li:hover::after { content: ""; top: 0px; right: -23px; position: absolute; border-width: 16px 16px 16px 8px; border-style: solid; border-color: transparent transparent transparent rgb(237, 16, 102); border-image: initial; z-index: 10000; }
+#leftMenu ul.mainMenu > li:hover a { color: white; }
+#leftMenu ul.mainMenu > li > a { color: rgb(102, 102, 102); display: block; text-decoration: none; }
+#leftMenu .unmenu { min-width: 230px; padding-left: 10px; position: absolute; left: 222px; top: 0px; display: none; z-index: 9999; }
+#leftMenu .unmenu .unmenuWrap { padding: 15px; background: rgb(247, 247, 247); min-height: 700px; border-radius: 0px 5px 5px 0px; box-shadow: rgba(0, 0, 0, 0.2) 8px 1px 8px; }
+#leftMenu .unmenu .itemMenu { margin-bottom: 20px; width: 200px; }
+#leftMenu .unmenu .itemMenu a { text-decoration: none; color: rgb(102, 102, 102); }
+#leftMenu .unmenu .itemMenu .title { line-height: 21px; display: block; font-size: 14px; font-weight: bold; color: rgb(228, 36, 107); border-bottom: 1px solid rgb(204, 204, 204); }
+#leftMenu .unmenu .itemMenu ul li { line-height: 14px; padding-bottom: 5px; }
+#leftMenu .unmenu .itemMenu ul li a { color: rgb(102, 102, 102); }
+#leftMenu .unmenu .itemMenu ul li a:hover { color: rgb(228, 36, 107); }
+#leftMenu .unmenu.col2 { width: 718px; }
+#leftMenu .unmenu.col2 .itemMenu { float: left; margin-right: 20px; }
+#leftMenu .unmenu.col3 { width: 718px; }
+#leftMenu .unmenu.col3 .itemMenu { float: left; margin-right: 20px; }
+#orders tr td:nth-child(1) { text-align: left; }
+#orders tr.child { display: none; }
+#orders tr.child td:nth-child(1) { padding-left: 30px; }

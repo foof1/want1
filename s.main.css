@@ -1,0 +1,550 @@
+/* Добавление в корзину */
+.addBasketBlock {
+	width:160px;
+	position:relative;
+	height:30px;
+}
+	.addBasketBlock .input{
+		width:60px;
+		position:absolute;
+		height:22px;
+		top:2px;
+		left:0;
+	}
+		.addBasketBlock .input input{
+			width:40px;
+			border:1px solid #e0e0e0;
+			border-radius: 5px;
+			height:25px;
+			text-align:center;
+			line-height:19px;
+		}
+	.addBasketBlock .add {
+		display:block;
+		width:93px;
+		height:30px;
+		position:absolute;
+		top:0;
+		right:0;
+		border:1px solid #ed1066;
+		border-radius:5px;
+		color:#ed1066;
+		text-align:center;
+		line-height:29px;
+		text-decoration:none;
+		text-transform:uppercase;
+		transition: all 0.2s linear 0s;
+	}	
+		.addBasketBlock .add:hover {
+			background:#ed1066;
+			color:white;
+		}
+		.addBasketBlock .add.ok, .addBasketBlock .add.ok:hover {
+			background:#70bf44;
+			border-color:#70bf44;
+			color:#fff;
+		}
+		
+.news-section-btm.isset {
+	color: #fff;
+	background: #70bf44;
+	border: 1px solid #70bf44;
+}
+	.news-section-btm.isset:hover {
+		background: #70bf44;
+		border: 1px solid #70bf44;
+	}
+		
+		
+/* Карточка товара */		
+#productCart .minprice{
+	color:#e4246b;
+	font-weight:bold;
+}
+	#productCart .info {
+		position:relative;
+		width:385px;
+		padding:0 0 15px;
+		float:left;
+		color: #666666;
+		
+	}
+		#productCart .info-rows {
+			border-bottom: 1px solid #DBDBDB;
+		}
+			#productCart .info-rows p {
+				margin: 0;
+				padding: 6px 0;
+			}
+			#productCart .info-rows p:first-child {
+				width: 30%;
+				float: left;
+				font-weight: bold;
+			}
+
+
+
+		#productCart .cert {
+			padding-top:10px;
+		}
+		
+		#productCart .info .condition{
+			width:660px;
+			left:-310px !important;
+		}
+	#productCart .info a{
+		color: #666666;
+	}
+#productCart .linkMinprice{
+	color:#666666;
+}	
+
+#productCart .details-path-navigation {
+	color:#666666;
+	margin-bottom: 10px;
+}	
+	#productCart .details-path-navigation a{
+		color:#666666;
+		padding: 0 5px;
+		text-decoration: none;
+	}	
+		
+	
+/* Таблица поставщиков */
+.suppliersTableWrap {
+	border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    color: #666666;
+    padding: 10px;
+	position:relative;
+}
+.suppliersTable {
+	width:100%;
+	color: #666666;
+}
+	.suppliersTable thead td{
+		font-weight:bold;
+	}
+	.suppliersTable tbody td{
+		height:30px;
+		padding:10px 0;
+		line-height:29px;
+		vertical-align:middle
+	}
+		.suppliersTable tbody td div.rc{
+			font-size:10px;
+			line-height:10px;
+			margin-top:-5px;
+		}
+	.suppliersTable span  {
+		font-weight: bold;
+		font-size: 16px;"
+	}
+		.suppliersTable span.suppliers-price {
+			color: #e4246b;
+		}
+		
+		.suppliersTable span  span{
+			font-size: 12px;
+		}
+		
+	.suppliersTable .add2  {
+		color: #666666;
+	}
+	
+	
+	
+/* Продукты */
+.productsItems {
+		
+}
+	.productsItems .item {
+		border:1px solid #e0e0e0;
+		border-radius: 5px;
+		color: #666666;
+		margin: 0 0 10px;
+		padding: 10px;
+		position:relative;
+		float:none;
+		height:auto;
+		width:auto;
+		min-height:120px;
+		transition: all 0.2s linear 0s;
+	}
+		.condition{
+			position:absolute;
+			width:48%; /*если 6 цен - 95%*/
+			left:0 !important;
+			top:40% !important;
+			z-index:999999999;
+			background:white;
+			padding:10px 30px; /*если 6 цен - 10px*/
+			display:none;
+		}
+			/* Всплывающее окно с ценами (Категории цен PriceMap)*/
+			.condition.popups > div {
+			  box-sizing: border-box;
+			  width: 100px;
+			  height: auto;
+			  border: 3px solid #e8e8e8;
+			  border-radius: 5px;
+			  display: inline-block;
+			  padding: 10px;
+			  text-align: center;
+			  float: left;
+			  -webkit-transition: margin-top 0.5s linear;
+			  transition: margin-top 0.5s linear;
+			  position: relative;
+			  margin-left: 8px;
+			  font-size: 10px;
+			  font-family: verdana;
+			}
+				.condition.popups > div hr {
+				  background-color: #dedede;
+				  border: none;
+				  height: 1px;
+				}
+				.condition.popups > div .price-package {
+				  font-size: 12px;
+				  font-weight: bold;
+				  margin-top: -5px;
+				}
+			.condition.popups p{
+				display: block;
+				float: left;
+				width: 350px; /*если 3 цены*/
+			}				
+			.condition.popups .package-active {
+			  border: 3px solid #3bc6b8;
+
+			}
+				.condition.popups .package-active::before {
+				  width: 0;
+				  height: 0;
+				  border-style: solid;
+				  border-width: 15px 15px 0 0;
+				  border-color: #3bc6b8 transparent transparent transparent;
+				  position: absolute;
+				  left: 0;
+				  top: 0;
+				  content: "";
+				}
+		/*
+			.condition table{
+				width:100%;
+				border-collapse: collapse;
+			}
+				.condition table td{
+					padding:3px;
+					border: 1px solid #ed1066;
+				}
+				.condition table td.active{
+					background: #e4246b none repeat scroll 0 0;
+					box-shadow: 0 10px 6px -8px #777;
+					color: white;
+					padding: 5px;
+					position: relative;
+				}
+		*/
+		.productsItems .item .photo{
+			float:left;
+			width:150px;
+			margin:10px 10px 0 0; 
+			position:relative;
+			
+			height: 150px;
+			text-align: center;
+		}
+			.productsItems .item .photo .gif360{
+				width:48px;
+				height:24px;
+				position:absolute;
+				right:0;
+				top:0;
+				background: url("") no-repeat;
+				z-index:5;
+			}
+			.productsItems .item .photo img {
+				height: auto;
+				max-height: 150px;
+				max-width: 150px;
+				width: auto;
+			}
+			.productsItems .item .photo .iconSale{
+				background:#ffff00;
+				font-weight:bold;
+				line-height:40px;
+				position:absolute;
+				width:40px;
+				height:40px;
+				border-radius:20px;
+				color:black;
+				left:0;
+				bottom:0;
+				font-size:14px;
+				text-align:center;					
+			}
+			.productsItems .item .photo .icon{
+				height:18px;
+				background:#ffff00;
+				font-weight:bold;
+				line-height:17px;
+				position:absolute;
+				width:80%;
+				color:black;
+				left:20px;
+				top:-20px;
+				text-align:center;
+				border-radius:0 0 5px 5px;			
+			}
+		.productsItems .item .num{
+			position:absolute;
+			left:5px;
+			top:5px;
+			font-weight:bold;
+		}
+		.productsItems .item .price{
+			width:160px;
+			float:right;
+			clear:none;
+			color:#666666;
+		}
+			.productsItems .item .price .lastOrder {
+				border-top:1px solid #e0e0e0;
+				margin-top:7px;
+				padding-top:5px;
+			}
+			.productsItems .item .price .fields {
+				font-size: 12px;
+				font-weight: normal;
+				line-height: 15px;
+			}
+				.productsItems .item .price .fields a{
+					color:#666666;
+				}
+			.productsItems .item .price .bottom{
+				line-height:18px;
+			}
+				.productsItems .item .price .bottom .minprice{
+					color:#e4246b;
+					font-weight:bold;
+				}
+				.productsItems .item .price .bottom .linkMinprice {				
+					margin-bottom: 8px;
+				}	
+					.productsItems .item .price .bottom .linkMinprice a{
+						color:#666666;
+					}
+					
+				.productsItems .item .price .bottom .order{
+					width:150px;
+					height:33px;
+					border:1px solid #e4246b;
+					text-align:center;
+					color:#e4246b;
+					line-height:32px;
+					border-radius:4px;
+					text-decoration:none;
+					text-transform:uppercase;
+					transition: all 0.2s linear 0s;
+				}
+					.productsItems .item .price .bottom .order:hover{
+						background:#e4246b;
+						color:white;
+					}
+					.productsItems .item .price .bottom .order.active {
+						background: #70bf44;
+						border-color: #70bf44;
+						color: #fff;
+					}
+				
+				
+
+		.productsItems .item .info{
+			padding:0;
+			width:340px;
+			float:left;
+		}
+			.productsItems .item .info h2{
+			    color: #666666;
+				margin-bottom: 10px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+				.productsItems .item .info h2 a{
+					font-weight:bold;
+					text-decoration:underline;
+					color: #666666;
+					font-family: arial;
+					font-size: 14px;
+				}
+
+			.productsItems .item .info .fields{
+				font-size:12px;
+				line-height:18px;
+			}
+			.productsItems .item .info .top{
+				font-size:20px;
+				font-weight:bold;
+				color:#e4246b;
+			}
+				.productsItems .item .info .top span{
+					font-size:12px;
+				}
+
+				
+				
+			.productsItems .item .info .oldPrice {
+				margin-top:10px;
+			}
+				.productsItems .item .info .oldPrice .text{
+					font-size:11px;
+				}
+				.productsItems .item .info .oldPrice .value span{
+					font-size:16px;
+					font-weight:bold;
+					position:relative;
+				}
+				.productsItems .item .info .oldPrice .value span:before {
+					content:'';
+					position:absolute;
+					display:block;
+					width:auto;
+					height:auto;
+					left:0;
+					top:0;
+					right:0;
+					bottom:0;
+					background: rgba(0,0,0,0) url("") no-repeat;
+					background-size:100% 100%; /* растягивает фон на всю ширину и высоту блока */
+				}
+
+		.productsItems .priceList {
+			margin-top:10px;
+			border-top: 1px solid #e0e0e0;
+			padding:10px;
+			display:none;
+		}
+
+
+
+
+/* Корзина */
+#basketTable td.delivery {
+	text-align:left;
+}
+#basketTable td.col1 {
+    height: 130px;
+    width: 130px;
+}
+#basketTable td.col2 {
+	text-align:left;
+}
+	#basketTable td .percent {
+		color:green;
+		font-size:10px;
+		white-space:nowrap;
+	}
+	#basketTable td.col2 .recycle-product-name {
+		display: block;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		width: 235px;	
+	}
+	
+	#basketTable input.qty{
+		width:50px;
+		text-align:center;
+		padding: 5px 0px;
+		border: 1px solid #e0e0e0;
+		border-radius: 5px;
+		color: #666;
+	}
+		#basketTable input.qty.bad{
+			border-color:red;
+			color:red;
+		}
+	#basketTable .basketDelete {
+		width: 15px;
+		height:15px;
+		display:block;
+		background:url("") no-repeat;
+	}	
+	#basketTable td.col1 img {	
+		height: auto;
+		max-height: 120px;
+		max-width: 120px;
+		width: auto;
+	}
+	#basketTable tfoot td.col5 {	
+		text-align:right;
+	}
+	#basketTable tfoot td.col6 {	
+		text-align:left;
+	}
+
+
+
+
+
+
+#filtersForm .filterItem {
+	float:left;
+}
+	#filtersForm .filterItem.onpages {
+		width:180px;
+	}
+	#filtersForm .filterItem.sort {
+		width:230px;
+	}
+
+
+
+.contentSupplier_7 .suppliersTable tbody tr td:nth-child(1) span,
+.contentSupplier_7 .suppliersTable tbody tr td:nth-child(2) span{
+	font-size:12px;
+}
+.contentSupplier_7 .suppliersTable tbody tr.id_supplier_7 td:nth-child(1) span,
+.contentSupplier_7 .suppliersTable tbody tr.id_supplier_7 td:nth-child(2) span{
+	font-size:16px;
+}
+	
+	
+	
+	
+	
+	
+	
+/* Корзина */
+#recycle .delivery .type{
+	display:none;
+} 
+	#recycle .delivery .type.active{
+		display:block;
+	} 
+
+#recycle .delivery .type_3 table{ 
+	width:100%;
+}	
+	#recycle .delivery .type_3 table th{ 
+		font-weight:normal;
+		text-align:left;
+		width:70px;
+		line-height:34px;
+		color:#666;
+	}	
+		#recycle .delivery .type_3 table td input{ 
+			height:26px;
+			padding:0 10px;
+			border:1px solid #e0e0e0;
+			border-radius:5px;
+			color:#666;
+		}	
+	
+	
+	
+	
+	
+	
+	
+
